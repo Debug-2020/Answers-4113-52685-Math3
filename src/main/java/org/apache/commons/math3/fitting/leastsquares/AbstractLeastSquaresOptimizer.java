@@ -127,9 +127,9 @@ public abstract class AbstractLeastSquaresOptimizer<OPTIM extends AbstractLeastS
      *
      * @return the square-root of the weight matrix.
      */
-//    public RealMatrix getWeightSquareRoot() {
-//        return weightSqrt == null ? null : weightSqrt.copy();
-//    }
+    public RealMatrix getWeightSquareRoot() {
+        return weightSqrt == null ? null : weightSqrt.copy();
+    }
 
     /**
      * Gets the model function.

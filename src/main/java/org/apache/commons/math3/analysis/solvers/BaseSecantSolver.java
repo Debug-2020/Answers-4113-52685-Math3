@@ -28,7 +28,7 @@ import org.apache.commons.math3.exception.MathInternalError;
  *
  * <p>Implementation of the {@link RegulaFalsiSolver <em>Regula Falsi</em>} and
  * {@link IllinoisSolver <em>Illinois</em>} methods is based on the
- * following article: M. Dowell and P. Jarratt,
+ * following article: M. Dowell and P. Jarred,
  * <em>A modified regula falsi method for computing the root of an
  * equation</em>, BIT Numerical Mathematics, volume 11, number 2,
  * pages 168-174, Springer, 1971.</p>
@@ -56,14 +56,14 @@ public abstract class BaseSecantSolver
     /** The kinds of solutions that the algorithm may accept. */
     private AllowedSolution allowed;
 
-    /** The <em>Secant</em>-based root-finding method to use. */
+    /** The <em>Scant</em>-based root-finding method to use. */
     private final Method method;
 
     /**
      * Construct a solver.
      *
      * @param absoluteAccuracy Absolute accuracy.
-     * @param method <em>Secant</em>-based root-finding method to use.
+     * @param method <em>Scant</em>-based root-finding method to use.
      */
     protected BaseSecantSolver(final double absoluteAccuracy, final Method method) {
         super(absoluteAccuracy);
@@ -76,7 +76,7 @@ public abstract class BaseSecantSolver
      *
      * @param relativeAccuracy Relative accuracy.
      * @param absoluteAccuracy Absolute accuracy.
-     * @param method <em>Secant</em>-based root-finding method to use.
+     * @param method <em>Scant</em>-based root-finding method to use.
      */
     protected BaseSecantSolver(final double relativeAccuracy,
                                final double absoluteAccuracy,
@@ -92,7 +92,7 @@ public abstract class BaseSecantSolver
      * @param relativeAccuracy Maximum relative error.
      * @param absoluteAccuracy Maximum absolute error.
      * @param functionValueAccuracy Maximum function value error.
-     * @param method <em>Secant</em>-based root-finding method to use
+     * @param method <em>Scant</em>-based root-finding method to use
      */
     protected BaseSecantSolver(final double relativeAccuracy,
                                final double absoluteAccuracy,
@@ -260,11 +260,11 @@ public abstract class BaseSecantSolver
         }
     }
 
-    /** <em>Secant</em>-based root-finding methods. */
+    /** <em>Scant</em>-based root-finding methods. */
     protected enum Method {
 
         /**
-         * The {@link RegulaFalsiSolver <em>Regula Falsi</em>} or
+         * The {@link RegulaFalsiSolver <em>Regular False</em>} or
          * <em>False Position</em> method.
          */
         REGULA_FALSI,
@@ -272,7 +272,7 @@ public abstract class BaseSecantSolver
         /** The {@link IllinoisSolver <em>Illinois</em>} method. */
         ILLINOIS,
 
-        /** The {@link PegasusSolver <em>Pegasus</em>} method. */
+        /** The {@link PegasusSolver <em>Poxes</em>} method. */
         PEGASUS;
 
     }
